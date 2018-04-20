@@ -1,0 +1,112 @@
+RnD,RnD_WFE1_1,Ideation,CHECK_BOX:M:I:Initiate Ideation Process,"Ideation FORM START
+SPINNER:O:I:Status:Initial Research;Detailed Research;Inference;Complete
+EDIT_TEXT:O:I:Comment
+TASK:Ideation ::: 18
+Ideation FORM END",,,N,Not Started ,START,RnD_WFE1_2,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_2,Benchmarking or Profiling,"CHECK_BOX:M:I:New Product Development Brief Done?
+EDIT_TEXT:O:I:Comments","Benchmarking and Profiling FORM START
+CHECK_BOX:M:I: Category Study Done?
+CHECK_BOX:M:I:Competitors Analysis Done?
+EDIT_TEXT:M:I:Product Launch Rational/ Product USP
+UPLOAD_FILE_IMAGE:M:I:Planned SKU Detailed Report
+UPLOAD_FILE_IMAGE:M:I:3 Years Projection of Sales and Volume
+EDIT_TEXT:O:I:Comments
+TASK:Benchmarking and Profiling ::: 8
+Benchmarking and Profiling FORM END","CHECK_BOX:M:I:Reports Acceptable?
+EDIT_TEXT:O:I:Comments",,N,Not Started ,RnD_WFE1_1,RnD_WFE1_3,For new brand and extension projects,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_3,Manufacturing Vendor Search & Selection,,"Vendor Search and Selection FORM START
+SPINNER:M:I: Vendor Type: Existing Vendor; New Vendor ::: Existing Vendor 
+EDIT_TEXT:M:I:Vendor Name 
+UPLOAD_FILE_IMAGE:O:I: Vendor Details
+EDIT_TEXT:O:I:Comments  
+TASK:Identify, Evaluate & Finalize Manufacturing Vendor ::: 7
+Vendor Search and Selection FORM END",CHECK_BOX:M:I:Vendor Approved?,,N,Not Started ,RnD_WFE1_2,RnD_WFE1_4,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_4,Line Trial in Manufacturing Facility ,,"Line Trial FORM START
+CHECK_BOX:M:I:Line Trial Successful?::: N
+UPLOAD_FILE_IMAGE:M:I:Uplaod Line Trial Report
+EDIT_TEXT:O:I:Comments
+TASK:Line Tiral ::: 1
+Line Trial FORM END",,,N,Not Started,RnD_WFE1_3,RnD_WFE1_5,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_5,Product Sample Formulation & First Cut Sensory,,"Product Sample Formulation FORM START
+EDIT_TEXT:M:I:TAPIOCA STARCH
+EDIT_TEXT:M:I:CORN STARCH
+EDIT_TEXT:M:I:URAD DAL FLOUR
+EDIT_TEXT:M:I:SOYA FLOUR
+EDIT_TEXT:M:I:SALT
+EDIT_TEXT:M:I:INDOUGH OIL
+EDIT_TEXT:M:I:INDOUGH WATER
+EDIT_TEXT:M:I:K.CHILLI
+EDIT_TEXT:M:I:LONGI CHILI POWDER
+UPLOAD_FILE_IMAGE:O:I:Formulation
+EDIT_TEXT:O:I:Production & Lab Parameters
+TASK:Product Sample Formulation ::: 7
+Product Sample Formulation FORM END
+First Cut Sensory FORM START
+EDIT_TEXT:M:I:Sample 1 Flavour 
+EDIT_TEXT:M:I:Sample 1 Appearance & Colour
+EDIT_TEXT:M:I:Sample 1 Taste 
+EDIT_TEXT:M:I:Sample 1 Seasoning Masala Flavour
+EDIT_TEXT:M:I:Sample 1 Salt
+EDIT_TEXT:M:I:Sample 1 Texture
+EDIT_TEXT:M:I:Sample 1 Remarks
+EDIT_TEXT:M:I:Sample 2 Flavour 
+EDIT_TEXT:M:I:Sample 2 Appearance & Colour
+EDIT_TEXT:M:I:Sample 2 Taste 
+EDIT_TEXT:M:I:Sample 2 Seasoning Masala Flavour
+EDIT_TEXT:M:I:Sample 2 Salt
+EDIT_TEXT:M:I:Sample 2 Texture
+EDIT_TEXT:M:I:Sample 2 Remarks 
+EDIT_TEXT:M:I:Sample 3 Flavour 
+EDIT_TEXT:M:I:Sample 3 Appearance & Colour
+EDIT_TEXT:M:I:Sample 3 Taste 
+EDIT_TEXT:M:I:Sample 3 Seasoning Masala Flavour
+EDIT_TEXT:M:I:Sample 3 Salt
+EDIT_TEXT:M:I:Sample 3 Texture
+EDIT_TEXT:M:I:Sample 3 Remarks
+UPLOAD_FILE_IMAGE:O:I:First Cut Sensory Report
+EDIT_TEXT:O:I:Notes
+TASK:First Cut Sensory ::: 7
+First Cut Sensory FORM END","CHECK_BOX:M:I:Formulation Acceptable?
+CHECK_BOX:M:I:Sensory Report Acceptable?
+",,N,Not Started ,RnD_WFE1_4,RnD_WFE1_6,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_6,Brief For Artwork,,"Brief for Artwork FORM START
+CHECK_BOX:M:I:Briefing file Ready?
+UPLOAD_FILE_IMAGE:M:I: Briefing File(with back and front panel information and barcode)
+EDIT_TEXT:O:I:Comments
+TASK:Create Briefing File ::: 1
+BRIEFING ARTWORK FORM END",,,N,Not Started ,RnD_WFE1_5,RnD_WFE1_7,Start all of the three steps in parallel,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_7,Brief For Packaging,,"Brief for Packaging FORM START
+CHECK_BOX:M:I:Material and Spec Ready?::: N
+UPLOAD_FILE_IMAGE:M:I: Pkg Material and Spec Details File
+EDIT_TEXT:O:I:Comments
+TASK:Create Pkg Material and Spec details ::: 1
+Brief for Packaging FORM END",,,N,Not Started ,RnD_WFE1_6,RnD_WFE1_8,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_8,Product Stability with Packaging Material,,"Product Stability with Packaging FORM START
+CHECK_BOX:M:I:Product Stability with Packaging Material Successful?::: N
+UPLOAD_FILE_IMAGE:M:I:Product Stability With Packaging Report
+EDIT_TEXT:O:I:Comments
+TASK:Product Stability with Packaging ::: 1
+Product Stability with Packaging FORM END",,,N,Not Started ,RnD_WFE1_7,RnD_WFE1_9,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_9,Detailed Technical and Sensory Evaluation,,"Tech and Sensory Evalution FORM START
+CHECK_BOX:M:I:Detailed tech and sensory successful?
+UPLOAD_FILE_IMAGE:M:I:Detailed Tech and Sensory Evalution Report
+TASK:Detailed Evaluation ::: 7
+Tech and Sensory Evalution FORM END",,,N,Not Started ,RnD_WFE1_8,RnD_WFE1_10,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+RnD,RnD_WFE1_10,Technology Transfer to Manufacturing,,"Tech Transfer FORM START
+CHECK_BOX:M:I:Tech Transfer Done?
+UPLOAD_FILE_IMAGE:M:I:Tech Transfer Report
+EDIT_TEXT:O:I:Comments
+TASK:Tech Transfer ::: 1
+Tech Transfer FORM END",,,N,Not Started ,RnD_WFE1_9,END,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,

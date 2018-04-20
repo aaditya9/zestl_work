@@ -1,0 +1,50 @@
+WFE,,comments
+Name,WFEX_Y
+X: Branch ID
+Y: WFE ID,,
+Sub Workflow,SER
+PKG
+LGL
+PKG
+MFG
+COE
+COM
+OPS,
+Communication pref,SER (all dept)
+SERp_XXX (dept proj. team)
+SERmgr (dept. managers)
+
+Default: WFE dept. proj grp,
+Skip,Y or N,
+Status,Not Started
+Not Applicable
+In Progress - Ontime
+In Progress - Delayed 
+Completed,
+Next WFE,,
+previous WFE,,
+Entry Checklist form start,,
+Admin only,"groups to assign edit permissions to",
+Entry Checklist form end,,
+Exit Checklist form start,,
+Admin only,"groups to assign edit permissions to",
+Exit Checklist form end,,
+TASK:"Task Description" ::: "duration in days",,
+Admin only,"groups to assign edit permissions to",
+WFE end,,
+,,
+Forms body,,
+Entry Checklist form body start,,
+"element_type":"Mandatory/Optional":"Iseditable/Noteditable":"element_name":"colon seperated values_where_needed,"default value if any",
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE,,
+If no admin   by default WFE dept proj. grp,,
+Entry Checklist form body end,,
+Exit Checklist form body start,,
+"element_type":"Mandatory/Optional":"Iseditable/Noteditable":"element_name":"colon seperated values_where_needed,"default value if any",
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE,,
+If no admin   by default WFE dept proj. grp,,
+Exit Checklist form body end,,
+"element_type":"Mandatory/Optional":"Iseditable/Noteditable":"element_name":"colon seperated values_where_needed,"default value if any",
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE,,
+If no admin   by default WFE dept proj. grp,,
+Forms body end,,

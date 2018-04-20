@@ -1,0 +1,65 @@
+Dept,WFE ID,Description,Entry Checklist,Main Forms/Tasks,Exit Checklist,Comm. Preferences,Skip,Status,Previous,Next,Actions to code
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_1,Site Study,CHECK_BOX:M:I:Enquiry Details filled,"Site Study Form Start
+CHECK_BOX:M:I:Customer contacted
+CHECK_BOX:M:I:Relevant documents uploaded
+UPLOAD_FILE_IMAGE:O:I: Site Layout
+UPLOAD_FILE_IMAGE:O:I: Building Elevation Plan
+UPLOAD_FILE_IMAGE:O:I: Floor Layout
+UPLOAD_FILE_IMAGE:O:I: Area Statement 
+EDIT_TEXT:O:I:Any Remarks
+TASK: Collect documents and do site survey if needed:::1
+Site Study Form End",,,N,Not Started,Start,TENDER_WFE1_2,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_2,Lead Validation,,"Lead Validation Form Start
+RADIO_BUTTON:M:I:Lead Validation status:Qualified;Unqualified
+CHECK_BOX:M:I:Requirements and customer validation done
+EDIT_TEXT:O:I:Customer Background
+SPINNER:M:I:Terms of Payment:Annual;Quaterly
+SPINNER:O:I:Bid Bond:Yes;No
+SPINNER:O:I:Retention:Yes;No
+UPLOAD_FILE_IMAGE:O:I: Supporting Document
+EDIT_TEXT:O:I:Any Remarks
+TASK: Do requirement analysis and lead validation:::3
+Lead Validation Form End",,,N,Not Started,TENDER_WFE1_1,TENDER_WFE1_3,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_3,Technical Evaluation,,"Technical Evaluation Form Start
+CHECK_BOX:M:I:Evaluation for all needed items done
+EDIT_TEXT:O:I:Details of all items needed with pricing
+EDIT_TEXT:O:I:Details of new items needed to procure with pricing
+EDIT_TEXT:O:I:Details of items need to import with pricing
+UPLOAD_FILE_IMAGE:M:I: Product Evaluation list
+EDIT_TEXT:O:I:Any Remarks
+TASK: Evaluate items required with costing and procurement details:::5
+Technical Evaluation Form End",,,N,Not Started,TENDER_WFE1_2,TENDER_WFE1_4,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_4,Build Tender,,"Build Tender Form Start
+CHECK_BOX:M:I: Solution created and Tender ready
+UPLOAD_FILE_IMAGE:M:I: Tender document
+EDIT_TEXT:O:I:Any Remarks
+TASK: Create Tender:::1
+Build Solution Form End","
+CHECK_BOX:M:I: Tender approved for submission
+AUTO_COMPLETE:O:I: Approved by
+EDIT_TEXT:O:I:Review Comments
+ADMIN: MGR",,N,Not Started,TENDER_WFE1_3,TENDER_WFE1_5,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_5,Tender Submission,,"Tender Submission Form Start
+CHECK_BOX:M:I:Tender Submitted
+TASK:Do Tender submission:::1
+Tender Submission Form End
+",,,N,Not Started,TENDER_WFE1_4,TENDER_WFE1_6,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_6,Feedback,,"Feedback Form Start
+SPINNER:M:I:Tender Status:Accepted;Rejected;Change suggested;Not received:::Not received
+EDIT_TEXT:O:I: Feedback Remarks
+TASK:Do Follow up for feedback:::5
+Feedback Form End",,,N,Not Started,TENDER_WFE1_5,TENDER_WFE1_7,
+,,,,,,,,,,,
+TENDER,TENDER_WFE1_7,Closure,,"Closure Form Start
+CHECK_BOX:M:I:Lead converted to customer:::N
+SPINNER:M:I:Closure Status:Tender Approved;Tender Declined; Tender on hold
+EDIT_TEST:M:I: Remarks
+UPLOAD_FILE_IMAGE:O:I:Order Lost /Win Report (Report must in case of order loss)
+TASK:Create Order loss or win report:::1
+Closure Form End",,,N,Not Started,TENDER_WFE1_6,END,

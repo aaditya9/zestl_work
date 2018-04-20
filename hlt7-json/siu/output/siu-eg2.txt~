@@ -1,0 +1,228 @@
+{
+  "rgs": {
+    "set_id_rgs": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "sch": {
+    "filler_contact_person": {
+      "id_number": {
+        "st": "6666"
+      }, 
+      "family_name": {
+        "surname": "Bob"
+      }, 
+      "given_name": {
+        "st": "Silverman"
+      }
+    }, 
+    "entered_by_person": {
+      "id_number": {
+        "st": "7589"
+      }, 
+      "family_name": {
+        "surname": "Tree"
+      }, 
+      "given_name": {
+        "st": "McBryde"
+      }
+    }, 
+    "appointment_timing_quantity": {
+      "start_date_time": {
+        "time": "20180327104500"
+      }, 
+      "end_date_time": {
+        "time": "20180327110000"
+      }
+    }, 
+    "appointment_duration_units": {
+      "identifier": {
+        "st": "M"
+      }
+    }, 
+    "filler_status_code": {
+      "identifier": {
+        "st": "Booked"
+      }
+    }, 
+    "appointment_type": {
+      "text": {
+        "st": "NEW WELL CHILD/PREVENTATIVE CA"
+      }
+    }, 
+    "appointment_reason": {
+      "identifier": {
+        "st": "Newborn visit"
+      }
+    }, 
+    "placer_appointment_id": {
+      "entity_identifier": {
+        "st": "1672598"
+      }
+    }, 
+    "filler_appointment_id": {
+      "entity_identifier": {
+        "st": "1672598"
+      }
+    }, 
+    "appointment_duration": {
+      "nm": {
+        "nm": "15"
+      }
+    }, 
+    "event_reason": {
+      "identifier": {
+        "st": "Newborn visit"
+      }
+    }
+  }, 
+  "pid": {
+    "marital_status": {
+      "identifier": {
+        "st": "single"
+      }
+    }, 
+    "set_id_pid": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "patient_name": {
+      "family_name": {
+        "surname": "BETAU"
+      }, 
+      "given_name": {
+        "st": "MONA"
+      }
+    }, 
+    "patient_address": {
+      "city": {
+        "st": "FAYETTEVILLE"
+      }, 
+      "zip_or_postal_code": {
+        "st": "28311"
+      }, 
+      "state_or_province": {
+        "st": "NC"
+      }, 
+      "street_address": {
+        "street_or_mailing_address": "1530 ARGON AVE"
+      }
+    }, 
+    "patient_identifier_list": {
+      "id_number": {
+        "st": "221662"
+      }
+    }, 
+    "phone_number_home": {
+      "telephone_number": {
+        "st": "(910)226-7576"
+      }
+    }, 
+    "date_time_of_birth": {
+      "time": {
+        "dtm": "20180324"
+      }
+    }, 
+    "administrative_sex": {
+      "is": {
+        "is": "M"
+      }
+    }
+  }, 
+  "aip": {
+    "personnel_resource_id": {
+      "id_number": {
+        "st": "6666"
+      }, 
+      "family_name": {
+        "surname": "Bob"
+      }, 
+      "given_name": {
+        "st": "Silverman"
+      }
+    }, 
+    "set_id_aip": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "ail": {
+    "location_resource_id": {
+      "point_of_care": {
+        "is": "2"
+      }, 
+      "room": {
+        "is": "Northside"
+      }
+    }, 
+    "set_id_ail": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "msh": {
+    "receiving_application": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "sending_facility": {
+      "namespace_id": {
+        "is": "KidzCare"
+      }
+    }, 
+    "receiving_facility": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "encoding_characters": {
+      "st": {
+        "st": "\\S\\\\R\\\\E\\\\T\\"
+      }
+    }, 
+    "version_id": {
+      "version_id": {
+        "id": "2.5.1"
+      }
+    }, 
+    "sending_application": {
+      "namespace_id": {
+        "is": "Office Practicum"
+      }
+    }, 
+    "date_time_of_message": {
+      "time": {
+        "dtm": "20180327150712"
+      }
+    }, 
+    "message_control_id": {
+      "st": {
+        "st": "20180327150712"
+      }
+    }, 
+    "message_type": {
+      "message_code": {
+        "id": "SIU"
+      }, 
+      "trigger_event": {
+        "id": "S14"
+      }
+    }, 
+    "processing_id": {
+      "processing_id": {
+        "id": "P"
+      }
+    }, 
+    "field_separator": {
+      "st": {
+        "st": "\\F\\"
+      }
+    }
+  }
+}

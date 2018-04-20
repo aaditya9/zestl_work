@@ -1,0 +1,309 @@
+{
+  "msh": {
+    "field_separator": {
+      "st": {
+        "st": "\\F\\"
+      }
+    },
+    "encoding_characters": {
+      "st": {
+        "st": "\\S\\\\R\\\\E\\\\T\\"
+      }
+    },
+    "sending_application": {
+      "namespace_id": {
+        "is": "Office Practicum"
+      }
+    },
+    "sending_facility": {
+      "namespace_id": {
+        "is": "KidzCare"
+      }
+    },
+    "receiving_application": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    },
+    "receiving_facility": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    },
+    "date_time_of_message": {
+      "time": {
+        "dtm": "20180326220427"
+      }
+    },
+    "message_type": {
+      "message_code": {
+        "id": "ADT"
+      },
+      "trigger_event": {
+        "id": "A08"
+      }
+    },
+    "message_control_id": {
+      "st": {
+        "st": "20180326220427"
+      }
+    },
+    "processing_id": {
+      "processing_id": {
+        "id": "P"
+      }
+    },
+    "version_id": {
+      "version_id": {
+        "id": "2.5.1"
+      }
+    }
+  },
+  "evn": {
+    "event_type_code": {
+      "id": {
+        "id": "A08"
+      }
+    },
+    "recorded_date_time": {
+      "time": {
+        "dtm": "20180326220427"
+      }
+    }
+  },
+  "pid": {
+    "set_id_pid": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "patient_identifier_list": {
+      "id_number": {
+        "st": "209470"
+      }
+    },
+    "patient_name": {
+      "family_name": {
+        "surname": "CURRANT"
+      },
+      "given_name": {
+        "st": "LAILA"
+      }
+    },
+    "date_time_of_birth": {
+      "time": {
+        "dtm": "20081005"
+      }
+    },
+    "administrative_sex": {
+      "is": {
+        "is": "F"
+      }
+    },
+    "race": {
+      "identifier": {
+        "st": "2106-3"
+      }
+    },
+    "patient_address": {
+      "street_address": {
+        "street_or_mailing_address": "621 UBER WAILEA"
+      },
+      "other_designation": {
+        "st": "APT 128"
+      },
+      "city": {
+        "st": "HOPE MILLS"
+      },
+      "state_or_province": {
+        "st": "NC"
+      },
+      "zip_or_postal_code": {
+        "st": "28348"
+      }
+    },
+    "phone_number_home": {
+      "telephone_number": {
+        "st": "(757)372-5524"
+      }
+    },
+    "primary_language": {
+      "identifier": {
+        "st": "eng"
+      }
+    },
+    "marital_status": {
+      "identifier": {
+        "st": "single"
+      }
+    },
+    "ethnic_group": {
+      "identifier": {
+        "st": "2186-5"
+      },
+      "text": {
+        "st": "NOT_HISPANIC_LATINO"
+      },
+      "name_of_coding_system": {
+        "id": "HL70189"
+      }
+    }
+  },
+  "pv1": {
+    "set_id_pv1": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "patient_class": {
+      "is": {
+        "is": "U"
+      }
+    },
+    "assigned_patient_location": {
+      "point_of_care": {
+        "is": "1"
+      },
+      "room": {
+        "is": "Hope Mills"
+      }
+    },
+    "attending_doctor": {
+      "id_number": {
+        "st": "7347"
+      },
+      "family_name": {
+        "surname": "Nathan"
+      },
+      "given_name": {
+        "st": "Sunil"
+      }
+    }
+  },
+  "gt1": {
+    "set_id_gt1": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "guarantor_number": {
+      "id_number": {
+        "st": "298299"
+      }
+    },
+    "guarantor_name": {
+      "family_name": {
+        "surname": "CURRANT"
+      },
+      "given_name": {
+        "st": "JUDY"
+      }
+    },
+    "guarantor_address": {
+      "street_address": {
+        "street_or_mailing_address": "621 UBER WAILEA"
+      },
+      "other_designation": {
+        "st": "APT 128"
+      },
+      "city": {
+        "st": "HOPE MILLS"
+      },
+      "state_or_province": {
+        "st": "NC"
+      },
+      "zip_or_postal_code": {
+        "st": "28348"
+      }
+    },
+    "guarantor_ph_num_home": {
+      "telephone_number": {
+        "st": "(757)372-5524"
+      }
+    },
+    "guarantor_administrative_sex": {
+      "is": {
+        "is": "F"
+      }
+    },
+    "guarantor_relationship": {
+      "identifier": {
+        "st": "MOTHER"
+      }
+    }
+  },
+  "in1": {
+    "set_id_in1": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "insurance_plan_id": {
+      "identifier": {
+        "st": "316969"
+      }
+    },
+    "insurance_company_id": {
+      "id_number": {
+        "st": "106"
+      },
+      "assigning_authority": {
+        "namespace_id": "OP"
+      }
+    },
+    "insurance_company_name": {
+      "organization_name": {
+        "st": "MEDICAID OF NORTH CAROLINA"
+      }
+    },
+    "insurance_company_address": {
+      "street_address": {
+        "street_or_mailing_address": "PO BOX 30968"
+      },
+      "city": {
+        "st": "RALEIGH"
+      },
+      "state_or_province": {
+        "st": "NC"
+      },
+      "zip_or_postal_code": {
+        "st": "27622"
+      }
+    },
+    "plan_effective_date": {
+      "dt": {
+        "dt": "20171211"
+      }
+    },
+    "verification_date_time": {
+      "time": {
+        "dtm": "201712110000"
+      }
+    },
+    "verification_by": {
+      "id_number": {
+        "st": "7027"
+      }
+    },
+    "policy_number": {
+      "st": {
+        "st": "954882843K"
+      }
+    }
+  },
+  "pd1": {
+    "living_will_code": {
+      "is": [
+        {
+          "is": "7347"
+        },
+        {
+          "is": "Nathan"
+        },
+        {
+          "is": "Sunil"
+        }
+      ]
+    }
+  }
+}

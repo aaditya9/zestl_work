@@ -1,0 +1,78 @@
+Dept,WFE ID,Description,Entry Checklist,Main Forms/Tasks,Exit Checklist,Comm. Preferences+G1,Skip,Status,Previous,Next,Actions to code
+"SER
+PKG
+LGL
+PKG
+MFG
+COE
+COM
+OPS","WFEX_Y
+X: Branch ID
+Y: WFE ID",,"""element_type"":""Mandatory/Optional"":""Iseditable/Noteditable"":""element_name"":""colon seperated values_where_needed” ::: ""default value if any""
+
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE
+
+ADMIN:""groups to assign edit permissions to""
+If no admin   by default WFE dept proj. grp
+
+","""element_type"":""Mandatory/Optional"":""Iseditable/Noteditable"":""element_name"":""colon seperated values_where_needed” ::: ""default value if any""
+
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE
+
+TASK:""Task Description"" ::: ""duration in days""
+
+ADMIN:""groups to assign edit permissions to""
+If no admin   by default WFE dept proj. grp
+","""element_type"":""Mandatory/Optional"":""Iseditable/Noteditable"":""element_name"":""colon seperated values_where_needed” ::: ""default value if any""
+
+
+SPINNER   EDIT_TEXT   DATE_PICKER   CHECK_BOX   RADIO_GROUP   TIME_PICKER   RATING_BAR   UPLOAD_FILE_IMAGE
+
+ADMIN:""groups to assign edit permissions to""
+If no admin   by default WFE dept proj. grp
+","SER (all dept)
+SERp_XXX (dept proj. team)
+SERmgr (dept. managers)
+
+Default: WFE dept. proj grp",Y or N,"Not Started
+Not Applicable
+In Progress - Ontime
+In Progress - Delayed 
+Completed",,,Guideline for writing code dependencies and cascaded actions
+,,,,,,,,,,,
+,SER_WFE1_1,Assign Engineer,"CHECK_BOX:M:I:Service Request Acknowledged?
+EDIT_TEXT:O:I:Comments","Assign Engineer FORM START
+AUTO_COMPLETE:M:I:Engineer Name
+EDIT_TEXT:O:I:Comments
+TASK:Assign Engineer ::: 1
+Assign Engineer FORM END ",,ENGp_XXX,N,Not Started ,START,SER_WFE1_2,
+,,,,,,,,,,,
+,SER_WFE1_2,Schedule Serive Request,,"Schedule Service Request FORM START
+SPINNER:M:I:Mode of Service:Remote;On Premise
+DATE_PICKER:M:I:Date
+TIME_PICKER:M:I:Time
+EDIT_TEXT:O:I:Comments
+TASK:Schedule Service Request ::: 3
+Schedule Service Request FORM END ",,CLTp_XXX,N,Not Started ,SER_WFE1_1,SER_WFE1_3,
+,,,,,,,,,,,
+,SER_WFE1_3,Service,,"Start FORM START
+CHECK_BOX:M:I:Start
+EDIT_TEXT:O:I:Comments
+TASK:Start ::: 8
+Start FORM END
+End FORM START
+CHECK_BOX:M:I:Customer Satisfied
+SPINNER:O:I:Product 1:Select
+SPINNER:O:I:Product 2:Select
+SPINNER:O:I:Product 3:Select
+UPLOAD_IMAGE:O:I:Replacement Parts 
+EDIT_TEXT:O:I:Comments
+TASK:Check Out ::: 8
+Check Out FORM END",,CLTp_XXX,N,Not Started ,"SER_WFE1_2
+",SER_WFE1_4,
+,,,,,,,,,,,
+,SER_WFE1_4,Customer Feedback,,"Feedback FORM START
+SPINNER:M:I:Rate Your Service Experience:Excellent;Very Good;Good;Fair;Poor ::: Excellent
+EDIT_TEXT:O:I:Comments
+TASK:Feedback ::: 8
+Feedback FORM END",,ADMIN,N,Not Started ,SER_WFE1_3,END,

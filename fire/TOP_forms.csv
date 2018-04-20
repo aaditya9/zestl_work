@@ -1,0 +1,11 @@
+TOP,TOP_WFE,Lead Initiation,,"Lead Initiation Form Start
+EDIT_TEXT:M:I:Name
+EDIT_TEXT:O:I:Email
+EDIT_TEXT:M:I:Mobile
+EDIT_TEXT:O:I:Designation
+EDIT_TEXT:O:I:Notes
+SPINNER:O:I:Type of Lead:Solution Request;Tender
+SPINNER:O:I:Status:Active;Inactive;Not Started;On Hold;Resumed:::Not Started
+AUTO_COMPLETE:M:I:Sales Lead:::Sales
+UPLOAD_FILE_IMAGE:O:I:Supporting Document
+Lead Initiation Form End"

@@ -1,0 +1,70 @@
+Mechanical,Mechanical_WFE1_1,Floating of Inquiry,CHECK_BOX:M:I:Project Brief Done?,"Identifying Makes FORM START
+CHECK_BOX:M:I:Make Identified
+EDIT_TEXT:O:I:Comments
+TASK:Identifying Makes ::: 3
+Identifying Makes FORM END 
+Calling for Catalogues FORM START
+CHECK_BOX:M:I:Call for Catalogues
+EDIT_TEXT:O:I:Comments
+TASK:Calling for Catalogues ::: 15
+Calling for Catalogues FORM END
+Highlighting USP FORM START
+CHECK_BOX:M:I:Highlighting USP Done?
+UPLOAD_FILE_IMAGE:M:I:Upload USP of Makes
+EDIT_TEXT:O:I:Comments
+TASK:Highlighting USP ::: 3
+Highlighting USP FORM END
+Finalise Make FORM START
+CHECK_BOX:M:I:Make Finalised?
+EDIT_TEXT:O:I:Comments
+TASK:Finalise Make ::: 3
+Finalise Make FORM END",CHECK_BOX:M:I:Floating of Inquiry Approved?,MGR;TEAM,N,Not Started ,START,Mechanical_WFE1_2,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+Mechanical,Mechanical_WFE1_2,Offers,,"Make Comparative FORM START
+CHECK_BOX:M:I:Make Comparative Prepared?
+UPLOAD_FILE_IMAGE:O:I:Upload Make Comparative 
+EDIT_TEXT:O:I:Comments
+TASK:Make Comparative ::: 3
+Make Comparative FORM END 
+Negotiation FORM START
+CHECK_BOX:M:I:Negotiation Done?
+UPLOAD_FILE_IMAGE:O:I:Upload Best Rates
+EDIT_TEXT:O:I:Comments
+TASK:Negotiation ::: 3
+Negotiation FORM END
+Finalise Termsl FORM START
+CHECK_BOX:M:I:Terms Finalised?
+UPLOAD_FILE_IMAGE:O:I:Upload Contract
+EDIT_TEXT:O:I:Comments
+TASK:Finalise Terms ::: 3
+Finalise Terms FORM END
+Prepare PO FORM START
+CHECK_BOX:M:I:Prepare PO
+UPLOAD_FILE_IMAGE:M:I:Upload PO
+EDIT_TEXT:O:I:Comments
+TASK:Prepare PO ::: 3
+Prepare PO FORM END
+Approve PO FORM START
+CHECK_BOX:M:I:PO Approved?
+EDIT_TEXT:O:I:Comments
+TASK:Approve PO ::: 3
+Approve PO FORM END
+Release Payment FORM START
+CHECK_BOX:M:I:Payment Released
+EDIT_TEXT:O:I:Comments
+TASK:Release Payment ::: 3
+Release Payment FORM END
+Follow Up for Delivery FORM START
+CHECK_BOX:M:I:Follow Up for Delivery
+DATE_PICKER:M:I:Estimated Date of Delivery
+EDIT_TEXT:O:I:Comments
+TASK:Follow Up for Delivery ::: 3
+Follow Up for Delivery FORM END",,MGR;TEAM,N,Not Started ,Mechanical_WFE1_1,END,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,

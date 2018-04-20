@@ -1,0 +1,247 @@
+{
+  "msh": {
+    "field_separator": {
+      "st": {
+        "st": "\\F\\"
+      }
+    },
+    "encoding_characters": {
+      "st": {
+        "st": "\\S\\\\R\\\\E\\\\T\\"
+      }
+    },
+    "sending_application": {
+      "namespace_id": {
+        "is": "Office Practicum"
+      }
+    },
+    "sending_facility": {
+      "namespace_id": {
+        "is": "KidzCare"
+      }
+    },
+    "receiving_application": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    },
+    "receiving_facility": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    },
+    "date_time_of_message": {
+      "time": {
+        "dtm": "20180327150626"
+      }
+    },
+    "message_type": {
+      "message_code": {
+        "id": "SIU"
+      },
+      "trigger_event": {
+        "id": "S14"
+      }
+    },
+    "message_control_id": {
+      "st": {
+        "st": "20180327150626"
+      }
+    },
+    "processing_id": {
+      "processing_id": {
+        "id": "P"
+      }
+    },
+    "version_id": {
+      "version_id": {
+        "id": "2.5.1"
+      }
+    }
+  },
+  "sch": {
+    "placer_appointment_id": {
+      "entity_identifier": {
+        "st": "1672641"
+      }
+    },
+    "filler_appointment_id": {
+      "entity_identifier": {
+        "st": "1672641"
+      }
+    },
+    "event_reason": {
+      "identifier": {
+        "st": "adhd f/u*"
+      }
+    },
+    "appointment_reason": {
+      "identifier": {
+        "st": "adhd f/u*"
+      }
+    },
+    "appointment_duration_units": {
+      "identifier": {
+        "st": "M"
+      }
+    },
+    "appointment_timing_quantity": {
+      "start_date_time": {
+        "time": "20180327110000"
+      },
+      "end_date_time": {
+        "time": "20180327113000"
+      }
+    },
+    "filler_contact_person": {
+      "id_number": {
+        "st": "7347"
+      },
+      "family_name": {
+        "surname": "Sunil"
+      },
+      "given_name": {
+        "st": "Pathak"
+      }
+    },
+    "entered_by_person": {
+      "id_number": {
+        "st": "7027"
+      },
+      "family_name": {
+        "surname": "GEORGE"
+      },
+      "given_name": {
+        "st": "MONEZ"
+      }
+    },
+    "filler_status_code": {
+      "identifier": {
+        "st": "Booked"
+      }
+    }
+  },
+  "pid": {
+    "set_id_pid": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "patient_identifier_list": {
+      "id_number": {
+        "st": "81623"
+      }
+    },
+    "patient_name": {
+      "family_name": {
+        "surname": "GILBERT"
+      },
+      "given_name": {
+        "st": "CIARA"
+      },
+      "second_and_further_given_names_or_initials_thereof": {
+        "st": "R"
+      }
+    },
+    "date_time_of_birth": {
+      "time": {
+        "dtm": "20060520"
+      }
+    },
+    "administrative_sex": {
+      "is": {
+        "is": "F"
+      }
+    },
+    "race": {
+      "identifier": {
+        "st": "2106-3"
+      }
+    },
+    "patient_address": {
+      "street_address": {
+        "street_or_mailing_address": "5422 COIN POLL LANE"
+      },
+      "city": {
+        "st": "HOPE MILLS"
+      },
+      "state_or_province": {
+        "st": "NC"
+      },
+      "zip_or_postal_code": {
+        "st": "28348"
+      }
+    },
+    "phone_number_home": {
+      "telephone_number": {
+        "st": "(845)706-4580"
+      }
+    },
+    "phone_number_business": {
+      "telephone_number": {
+        "st": "(910)425-0800"
+      }
+    },
+    "primary_language": {
+      "identifier": {
+        "st": "eng"
+      }
+    },
+    "marital_status": {
+      "identifier": {
+        "st": "single"
+      }
+    },
+    "ethnic_group": {
+      "identifier": {
+        "st": "2186-5"
+      },
+      "text": {
+        "st": "NOT_HISPANIC_LATINO"
+      },
+      "name_of_coding_system": {
+        "id": "HL70189"
+      }
+    }
+  },
+  "rgs": {
+    "set_id_rgs": {
+      "si": {
+        "si": "1"
+      }
+    }
+  },
+  "ail": {
+    "set_id_ail": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "location_resource_id": {
+      "point_of_care": {
+        "is": "1"
+      },
+      "room": {
+        "is": "Hope Mills"
+      }
+    }
+  },
+  "aip": {
+    "set_id_aip": {
+      "si": {
+        "si": "1"
+      }
+    },
+    "personnel_resource_id": {
+      "id_number": {
+        "st": "7347"
+      },
+      "family_name": {
+        "surname": "Sunil"
+      },
+      "given_name": {
+        "st": "Pathak"
+      }
+    }
+  }
+}

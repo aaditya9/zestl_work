@@ -1,0 +1,13 @@
+TOP,TOP_WFE,,,"Lead More Info Form Start
+EDIT_TEXT:O:I:Organization,,,,
+EDIT_TEXT:O:I:Office Address,,,,
+EDIT_TEXT:O:I:Website URL,,,,
+EDIT_TEXT:O:I:LinkedIn URL,,,,
+CHECK_BOX:O:I:Send Greeting Email:::N,,,,
+Lead More Info Form End,,,,
+,,,,
+Lead Stats Form Start,,,,
+SPINNER:O:I:Lead Potential:Low;Medium;High;Not Relevant:::Low,,,,
+EDIT_TEXT:O:I:Deal Size,,,,
+EDIT_TEXT:O:I:Notes,,,,
+Lead Stats Form End",,,,

@@ -1,0 +1,211 @@
+/************** TEXT CARD *****************/
+
+Base Level : ---   Attachments
+All Action Level : ---   Add Attachment
+Base Level : ---   Publish
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Profile Image
+All Action Level : ---   Customize
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Add Card
+Inside Level : ---Add Card------Add Text Card
+Inside Level : ---Add Card------Add Form Card
+Inside Level : ---Add Card------Add Forum Card
+Inside Level : ---Add Card------Add Gallery Card
+Inside Level : ---Add Card------Add Location Tracking Card
+Inside Level : ---Add Card------Add Link Card
+Inside Level : ---Add Card------Add Calendar Card
+Inside Level : ---Add Card------Add Attendance Card
+Inside Level : ---Add Card------Add Product Carousel Card
+Inside Level : ---Add Card------Add Banner Carousel Card
+All Action Level : ---   Share
+
+/************** FORM CARD *************/
+Base Level : ---   New
+Base Level : ---   Publish
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Download PDF for Submissions
+All Action Level : ---   Download Report
+All Action Level : ---   Profile Image
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Allowed Users
+Inside Level : ---User Permission Settings------Communication Preferences
+Inside Level : ---User Permission Settings------User Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Share
+
+/************* FORUM *********/
+Base Level : ---   Add Comment
+Base Level : ---   Attachments
+All Action Level : ---   See Attachments (7)
+All Action Level : ---   Add Attachment
+Base Level : ---   Publish
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Share
+
+/****************** Gallery **************/
+
+Base Level : ---   Upload Image
+Base Level : ---   Publish
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Share
+
+/***************** LOcation Track *************/
+
+Base Level : ---   More actions
+All Action Level : ---   Manage Users
+All Action Level : ---   Edit
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Share
+
+/*************** Attendance ************/
+
+Base Level : ---   Scan
+Base Level : ---   More actions
+All Action Level : ---   Download Report
+All Action Level : ---   Generate Report
+All Action Level : ---   Edit
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Allowed Users
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Share
+
+/************** Link ***********/
+
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Share
+
+/**************** Calendar ****************/
+Base Level : ---   Explore
+Base Level : ---   Attachments
+All Action Level : ---   See Attachments (6)
+All Action Level : ---   Add Attachment
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Message
+Inside Level : ---Message------SMS
+Inside Level : ---Message------Mail & Notification
+All Action Level : ---   Share
+
+/*********** Lib  *******************/
+
+Base Level : ---   Create ShortCut
+Base Level : ---   Message
+All Action Level : ---   Chat
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Link
+All Action Level : ---   Customize
+All Action Level : ---   Tasks
+All Action Level : ---   Settings
+Inside Level : ---Settings------Library Settings
+Inside Level : ---Settings------Books Settings
+Inside Level : ---Settings------User Settings
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Add Card
+Inside Level : ---Add Card------Add Department
+Inside Level : ---Add Card------Add Fast Scan
+Inside Level : ---Add Card------Add Text Card
+Inside Level : ---Add Card------Add Form Card
+Inside Level : ---Add Card------Add Forum Card
+Inside Level : ---Add Card------Add Gallery Card
+Inside Level : ---Add Card------Add Location Tracking Card
+Inside Level : ---Add Card------Add Link Card
+Inside Level : ---Add Card------Add Calendar Card
+Inside Level : ---Add Card------Add Attendance Card
+Inside Level : ---Add Card------Add Product Carousel Card
+Inside Level : ---Add Card------Add Banner Carousel Card
+All Action Level : ---   Share
+
+/************* dept *************/
+
+Base Level : ---   Create ShortCut
+Base Level : ---   Message
+All Action Level : ---   Chat
+Base Level : ---   More actions
+All Action Level : ---   Edit
+All Action Level : ---   Link
+All Action Level : ---   Customize
+All Action Level : ---   Tasks
+All Action Level : ---   User Permission Settings
+Inside Level : ---User Permission Settings------View Permissions
+Inside Level : ---User Permission Settings------Admin Permissions
+Inside Level : ---User Permission Settings------Operator Permissions
+Inside Level : ---User Permission Settings------Communication Preferences
+All Action Level : ---   Add Card
+Inside Level : ---Add Card------Add Department
+Inside Level : ---Add Card------Add Text Card
+Inside Level : ---Add Card------Add Form Card
+Inside Level : ---Add Card------Add Forum Card
+Inside Level : ---Add Card------Add Gallery Card
+Inside Level : ---Add Card------Add Location Tracking Card
+Inside Level : ---Add Card------Add Link Card
+Inside Level : ---Add Card------Add Calendar Card
+Inside Level : ---Add Card------Add Attendance Card
+Inside Level : ---Add Card------Add Product Carousel Card
+Inside Level : ---Add Card------Add Banner Carousel Card
+All Action Level : ---   Share

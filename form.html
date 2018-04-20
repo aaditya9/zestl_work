@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+    <script type='text/javascript'>
+        var app = angular.module("tableCSV", []);
+            app.directive('exportToCsv',function(){
+                return{
+                    restrict: 'A',
+                    scope:{
+
+                    }
+    	            link: function (scope, element, attrs){
+
+                        	var el = element[0];
+                            element.bind('click', function(e){
+                                var table = e.target.nextElementSibling;
+                                var csvString = '';
+                                for(var i=0; i<table.rows.length;i++){
+                                    var rowData = table.rows[i].cells;
+                                    for(var j=0; j<rowData.length;j++){
+                                        csvString = csvString + rowData[j].innerHTML + ",";
+                                    }
+                                    csvString = csvString.substring(0,csvString.length - 1);
+                                    csvString = csvString + "\n";
+                                }
+                                csvString = csvString.substring(0, csvString.length - 1);
+                                var a = $('<a/>', {
+                                    style:'display:none',
+                                    href:'data:application/octet-stream;base64,'+btoa(csvString),
+                                    download:'emailStatistics.csv'
+                                }).appendTo('body')
+                                a[0].click()
+                                a.remove();
+    	            }
+                }
+            });
+
+            .controller("sampleController", function($scope) {
+
+                $scope.name=null;
+
+                  $scope.make_table=function(){
+                     var u_name = 'EDIT_TEXT:M:I:' + $scope.name;
+               }
+    });
+
+</script>
+
+<body ng-app="tableCSV">
+<div class="container" ng-controller="sampleController">
+    <form >
+        <table>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_name">Enter Name :</label>
+          </div>
+            <div class="col-75">
+                <input type='text' id='u_name' autoincrement="off" ng-model="name" required ><br>
+            </div>
+        </div>
+
+        <div class="row">
+         <div class="col-25">
+          <label for="gender">Enter Gender :</label>
+        </div>
+            <div class="col-75">
+            <select ng-model="mychoice">
+                        <option  required id="gender" selected disabled hidden >Choose here</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                     </select><br>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_address">Enter Permanent Address :</label>
+          </div>
+             <div class="col-75">
+              <input type="text" id="u_address" autoincrement="off" ng-model="address" required><br>
+             </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_localaddress">Enter  Local Address :</label>
+          </div>
+            <div class="col-75">
+              <input type="text" id="u_localaddress" autoincrement="off" ng-model="local_address" ><br>
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_mobno"> Enter Mobile no :</label>
+          </div>
+            <div class="col-75">
+                 <input type="text"   pattern="((\+*)((0[ -]+)*|(91 )*)(\d{12}+|\d{10}+))|\d{5}([- ]*)\d{6}" id="u_mobno" autoincrement="off" ng-model="mobileno" required><br>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_landline"> Enter Landline :</label>
+          </div>
+            <div class="col-75">
+              <input type="text" id="u_landline" autoincrement="off" ng-model="landline" ><br>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_email"> Enter Email:</label>
+          </div>
+            <div class="col-75">
+                <input type="text" id="u_email" autoincrement="off" ng-model="landline" required ><br>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_city"> Enter city:</label>
+          </div>
+             <div class="col-75">
+                  <input type="text" id="u_city" autoincrement="off" ng-model="city" required ><br>
+             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="select_state">Enter State:</label>
+          </div>
+              <div class="col-75">
+                <select ng-model="mychoice">
+                        <option id="select_state" selected disabled hidden >Choose here</option>
+
+                     </select><br>
+              </div>
+        </div>
+
+         <div class="row">
+          <div class="col-25">
+              <label for="u_10th">Education (enter 10th) :</label>
+          </div>
+             <div class="col-75">
+              <input type="text" id="u_10th" autoincrement="off" ng-model="10thstd" required ><br>
+             </div>
+         </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="u_12th">Education (enter 12th) :</label>
+          </div>
+               <div class="col-75">
+                    <input type="text" id="u_12th" autoincrement="" ng-model="12thstd" required><br>
+               </div>
+         </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_subject">Subject :</label>
+          </div>
+            <div class="col-75">
+                <input type="text" id="u_subject" autoincrement="" ng-model="subject"><br>
+            </div>
+        </div>
+          <div class="row">
+          <div class="col-25">
+              <label for="u_degree"> Degree : </label>
+          </div>
+               <div class="col-75">
+                    <input type="text" id="u_degree" autoincrement="" ng-model="degree"><br>
+               </div>
+          </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_field">  Field :</label>
+          </div>
+             <div class="col-75">
+                 <input type="text" id="u_field" autoincrement="" ng-model="field"><br>
+             </div>
+        </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="select_exam">   Entrance examination given :</label>
+          </div>
+               <div class="col-75">
+               <select ng-model="mychoice_exam">
+                                <option id="select_exam" selected disabled hidden >Choose here</option>
+
+                             </select><br>
+               </div>
+         </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_mht-cet"> MHT-CET : </label>
+          </div>
+            <div class="col-75">
+                 <input type="checkbox" id="u_mht-cet" ng-model="mht-cet" autocomplete="off" ><br>
+            </div>
+        </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="u_marks">  MHT-CET marks :  </label>
+          </div>
+              <div class="col-75">
+               <input type="text" id="u_marks" autoincrement="" ng-model="cet_marks" ><br>
+              </div>
+         </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="u_jee">JEE-MAINS :</label>
+          </div>
+            <div class="col-75">
+             <input type="checkbox" id="u_jee" ng-model="jee_marks" autocomplete="off" ><br>
+            </div>
+         </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_jee_marks">JEE-MAINS marks :</label>
+          </div>
+             <div class="col-75">
+                <input type="text" id ="u_jee_marks" autoincrement="" ng-model="jee_marks" ><br>
+             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_bba">MITWPU(BBA) :</label>
+          </div>
+             <div class="col-75">
+                 <input type="checkbox" id="u_bba" ng-model="bba" autocomplete="off" >
+             </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_ MITWPU_marks">MITWPU marks : </label>
+          </div>
+             <div class="col-75">
+             <input type="text" id="u_ MITWPU_marks" autoincrement="" ng-model="bba_marks" ><br>
+             </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_mpg"> MITWPU(MPG) :</label>
+          </div>
+             <div class="col-75">
+               <input type="checkbox" id="u_mpg" ng-model="mpg" autocomplete="off" ><br>
+             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_ mpg_marks"> MITWPU marks :</label>
+          </div>
+            <div class="col-75">
+                 <input type="text" id="u_ mpg_marks" autoincrement="" ng-model="mpg_marks" ><br>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_other">  Other Exam :</label>
+          </div>
+         <div class="col-75">
+                <input type="checkbox" id="u_other" ng-model="other" autocomplete="off" >
+         </div>
+        </div>
+          <div class="row">
+          <div class="col-25">
+              <label for="u_other_exam">  Other Exam Marks:</label>
+          </div>
+
+              <div class="col-75">
+                    <input type="checkbox" id="u_other_exam" ng-model="other_marks" autocomplete="off" ><br>
+              </div>
+          </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="select_domicile">  Domicile :</label>
+          </div>
+             <div class="col-75">
+            <select ng-model="mydomicile" required>
+                        <option id="select_domicile" selected disabled hidden >Choose here</option>
+
+                     </select><br>
+             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_achievements">Special Achievements :</label>
+          </div>
+         <div class="col-75">
+             <input type="text" id="u_achievements" autocomplete="off" ng-model="mpg_marks" ><br>
+         </div>
+        </div>
+
+         <div class="row">
+          <div class="col-25">
+              <label for="u_specialization">Interested area in specialization  :</label>
+          </div>
+            <div class="col-75">
+              <input type="text" id="u_specialization" autoincrement="" ng-model="mpg_marks" ><br>
+            </div>
+         </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="select_course">Interested course : </label>
+          </div>
+             <div class="col-75">
+                <select ng-model="mycouse" required>
+                                <option id="select_course" selected disabled hidden >Choose here</option>
+
+                             </select><br>
+             </div>
+         </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="select_info">SOurce of information :</label>
+          </div>
+             <div class="col-75">
+            <select ng-model="myinfo">
+                            <option id="select_info" selected disabled hidden >Choose here</option>
+
+                         </select><br>
+             </div>
+         </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="u_remarks"> Remarks : </label>
+          </div>
+        <div class="col-75">
+                <input type="text" id="u_remarks" autocomplete="off" ng-model="remarks" ><br>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_adv"> Name of facility Advisor :</label>
+          </div>
+             <div class="col-75">
+                  <input type="text" id="u_adv" autocomplete="off" ng-model="advisor" ><br>
+             </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+              <label for="u_comments"> Comments :</label>
+          </div>
+            <div class="col-75">
+                <input type="text" id="u_comments" autocomplete="off" ng-model="comments" ><br>
+            </div>
+        </div>
+         <div class="row">
+          <div class="col-25">
+              <label for="select_status">  Admission Stats :</label>
+          </div>
+             <div class="col-75">
+            <select ng-model="myinfo">
+                            <option id="select_status" selected disabled hidden >Choose here</option>
+
+                         </select><br>
+             </div>
+         </div>
+
+         <div class="row">
+            <!--<input type="submit" value="Submit">-->
+                <button export-to-csv>Download</button>
+            </div>
+        </table>
+    </form>
+</div>
+</body>
+</html>

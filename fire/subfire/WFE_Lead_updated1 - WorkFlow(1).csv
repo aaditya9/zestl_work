@@ -1,0 +1,62 @@
+Dept,WFE ID,Description,Entry Checklist,Main Forms/Tasks,Exit Checklist,Comm. Preferences,Skip,Status,Previous,Next,Actions to code
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_1,Site Study,CHECK_BOX:M:I:Enquiry Details filled,"Site Study Form Start
+CHECK_BOX:M:I:Relevant documents uploaded:::N
+UPLOAD_FILE_IMAGE:O:I: Site Layout
+UPLOAD_FILE_IMAGE:O:I: Building Elevation Plan
+UPLOAD_FILE_IMAGE:O:I: Floor Layout
+UPLOAD_FILE_IMAGE:O:I: Area Statement 
+EDIT_TEXT:O:I:Any Remarks
+TASK: Collect documents and do site survey if needed:::1
+Site Study Form End",,,,,,SOLUTION REQUEST_WFE1_2,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_2,Lead Validation,,"Lead Validation Form Start
+CHECK_BOX:M:I:Requirements and customer validation done
+EDIT_TEXT:O:I:Customer Background
+SPINNER:M:I:Terms of Payment:Annual;Quaterly
+SPINNER:O:I:Bid Bond:Yes;No
+SPINNER:O:I:Retention:Yes;No
+UPLOAD_FILE_IMAGE:O:I: Supporting Document
+EDIT_TEXT:O:I:Any Remarks
+TASK: Do requirement analysis and lead validation:::3
+Lead Validation Form End",,,,,SOLUTION REQUEST_WFE1_1,SOLUTION REQUEST_WFE1_3,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_3,Technical Evaluation,,"Technical Evaluation Form Start
+CHECK_BOX:M:I:Evaluation for all needed items done
+EDIT_TEXT:O:I:Details of all items needed with pricing
+EDIT_TEXT:O:I:Details of new items needed to procure with pricing
+EDIT_TEXT:O:I:Details of items need to import with pricing
+UPLOAD_FILE_IMAGE:M:I: Product Evaluation list
+EDIT_TEXT:O:I:Any Remarks
+TASK: Evaluate items required with costing and procurement details:::5
+Technical Evaluation Form End",,,,,SOLUTION REQUEST_WFE1_2,SOLUTION REQUEST_WFE1_4,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_4,Build Solution,,"Build Solution Form Start
+CHECK_BOX:M:I: Solution created and Proposal ready
+UPLOAD_FILE_IMAGE:M:I: Proposal document
+EDIT_TEXT:O:I:Any Remarks
+TASK: Create Proposal:::1
+Build Solution Form End","
+CHECK_BOX:M:I: Proposal approved for submission
+AUTO_COMPLETE:O:I: Approved by
+EDIT_TEXT:O:I:Review Comments
+ADMIN: MGR",,,,SOLUTION REQUEST_WFE1_3,SOLUTION REQUEST_WFE1_5,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_5,Proposal Submission,,"Proposal Submission Form Start
+CHECK_BOX:M:I:Proposal Submitted
+TASK:Do Proposal submission:::1
+Proposal Submission Form End
+",,,,,SOLUTION REQUEST_WFE1_4,SOLUTION REQUEST_WFE1_6,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_6,Feedback,,"Feedback Form Start
+SPINNER:M:I:Proposal Status:Accepted;Rejected;Change suggested;Not received:::Not received
+EDIT_TEXT:O:I: Feedback Remarks
+TASK:Do Follow up for feedback:::5
+Feedback Form End",,,,,SOLUTION REQUEST_WFE1_5,SOLUTION REQUEST_WFE1_7,
+,,,,,,,,,,,
+,SOLUTION REQUEST_WFE1_7,Closure,,"Closure Form Start
+SPINNER:M:I:Closure Status:Proposal Approved;Proposal Declined; Proposal on hold
+EDIT_TEST:M:I: Remarks
+UPLOAD_FILE_IMAGE:O:I:Order Lost /Win Report (Report must in case of order loss)
+TASK:Create Order loss or win report:::1
+Closure Form End",,,,,SOLUTION REQUEST_WFE1_6,END,

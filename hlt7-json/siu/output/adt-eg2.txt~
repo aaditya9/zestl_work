@@ -1,0 +1,277 @@
+{
+  "pv1": {
+    "set_id_pv1": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "patient_class": {
+      "is": {
+        "is": "U"
+      }
+    }, 
+    "assigned_patient_location": {
+      "point_of_care": {
+        "is": "19"
+      }, 
+      "room": {
+        "is": "Wilmington"
+      }
+    }, 
+    "attending_doctor": {
+      "id_number": {
+        "st": "3804"
+      }, 
+      "family_name": {
+        "surname": "Stony"
+      }, 
+      "given_name": {
+        "st": "Mas"
+      }
+    }
+  }, 
+  "evn": {
+    "event_type_code": {
+      "id": {
+        "id": "A08"
+      }
+    }, 
+    "recorded_date_time": {
+      "time": {
+        "dtm": "20180326220418"
+      }
+    }
+  }, 
+  "pid": {
+    "marital_status": {
+      "identifier": {
+        "st": "single"
+      }
+    }, 
+    "ethnic_group": {
+      "text": {
+        "st": "DECLINED_TO_ANSWER"
+      }, 
+      "name_of_coding_system": {
+        "id": "HL70189"
+      }
+    }, 
+    "primary_language": {
+      "identifier": {
+        "st": "eng"
+      }
+    }, 
+    "set_id_pid": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "patient_name": {
+      "family_name": {
+        "surname": "PATIL"
+      }, 
+      "given_name": {
+        "st": "LALIT"
+      }
+    }, 
+    "patient_address": {
+      "city": {
+        "st": "WILMINGTON"
+      }, 
+      "other_designation": {
+        "st": "APT B"
+      }, 
+      "zip_or_postal_code": {
+        "st": "28401"
+      }, 
+      "state_or_province": {
+        "st": "NC"
+      }, 
+      "street_address": {
+        "street_or_mailing_address": "15 STOW LN"
+      }
+    }, 
+    "patient_identifier_list": {
+      "id_number": {
+        "st": "568"
+      }
+    }, 
+    "phone_number_home": {
+      "telephone_number": {
+        "st": "(007)685-4178"
+      }
+    }, 
+    "date_time_of_birth": {
+      "time": {
+        "dtm": "20110321"
+      }
+    }, 
+    "alternate_patient_id_pid": {
+      "id_number": {
+        "st": "434"
+      }
+    }, 
+    "administrative_sex": {
+      "is": {
+        "is": "M"
+      }
+    }
+  }, 
+  "in1": {
+    "insurance_company_name": {
+      "organization_name": {
+        "st": "SELF-PAY"
+      }
+    }, 
+    "insurance_plan_id": {
+      "identifier": {
+        "st": "354207"
+      }
+    }, 
+    "insurance_company_id": {
+      "id_number": {
+        "st": "101"
+      }, 
+      "assigning_authority": {
+        "namespace_id": "OP"
+      }
+    }, 
+    "set_id_in1": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "policy_number": {
+      "st": {
+        "st": "1"
+      }
+    }
+  }, 
+  "pd1": {
+    "living_will_code": {
+      "is": [
+        {
+          "is": "3804"
+        }, 
+        {
+          "is": "Stony"
+        }, 
+        {
+          "is": "Mas"
+        }
+      ]
+    }
+  }, 
+  "gt1": {
+    "set_id_gt1": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "guarantor_number": {
+      "id_number": {
+        "st": "337260"
+      }
+    }, 
+    "guarantor_ph_num_home": {
+      "telephone_number": {
+        "st": "(910)685-4178"
+      }
+    }, 
+    "guarantor_name": {
+      "family_name": {
+        "surname": "KATE"
+      }, 
+      "given_name": {
+        "st": "AYA"
+      }
+    }, 
+    "guarantor_address": {
+      "city": {
+        "st": "WILMINGTON"
+      }, 
+      "other_designation": {
+        "st": "APT B"
+      }, 
+      "zip_or_postal_code": {
+        "st": "28401"
+      }, 
+      "state_or_province": {
+        "st": "NC"
+      }, 
+      "street_address": {
+        "street_or_mailing_address": "415 STOW LN"
+      }
+    }, 
+    "guarantor_administrative_sex": {
+      "is": {
+        "is": "F"
+      }
+    }, 
+    "guarantor_relationship": {
+      "identifier": {
+        "st": "MOTHER"
+      }
+    }
+  }, 
+  "msh": {
+    "receiving_application": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "sending_facility": {
+      "namespace_id": {
+        "is": "KidzCare"
+      }
+    }, 
+    "receiving_facility": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "encoding_characters": {
+      "st": {
+        "st": "\\S\\\\R\\\\E\\\\T\\"
+      }
+    }, 
+    "version_id": {
+      "version_id": {
+        "id": "2.5.1"
+      }
+    }, 
+    "sending_application": {
+      "namespace_id": {
+        "is": "Office Practicum"
+      }
+    }, 
+    "date_time_of_message": {
+      "time": {
+        "dtm": "20180326220418"
+      }
+    }, 
+    "message_control_id": {
+      "st": {
+        "st": "20180326220418"
+      }
+    }, 
+    "message_type": {
+      "message_code": {
+        "id": "ADT"
+      }, 
+      "trigger_event": {
+        "id": "A08"
+      }
+    }, 
+    "processing_id": {
+      "processing_id": {
+        "id": "P"
+      }
+    }, 
+    "field_separator": {
+      "st": {
+        "st": "\\F\\"
+      }
+    }
+  }
+}
