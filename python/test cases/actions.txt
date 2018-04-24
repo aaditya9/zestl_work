@@ -1,6 +1,0 @@
-Users
-Base Level : ---   Search
-Base Level : ---   Edit
-Base Level : ---   Create User
-Base Level : ---   Send Message
-Base Level : ---   User Permission Settings

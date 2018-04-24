@@ -1,1 +1,0 @@
-pwd = "zsplADMIN999"
