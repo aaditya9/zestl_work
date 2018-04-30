@@ -87,13 +87,14 @@ def check_appointment():
                                 u_start_time=CM.force_decode(row[3]) + " " + CM.force_decode(row[4])#user start time
                                 u_end_time = CM.force_decode(row[5]) + " " + CM.force_decode(row[6])#user end time
                                 p_start_date =CM.force_decode(row[3])
-                                p_start_time = CM.force_decode(row[4])
                                 p_end_date = CM.force_decode(row[5])
-                                p_end_time=CM.force_decode(row[6])
+                                u_s_time = CM.force_decode(row[4])
+                                u_e_time = CM.force_decode(row[6])
 
-                            print(u_start_time)
-                            print(u_end_time)
-                            print(doc)
+                        list_start = []
+                        list_end = []
+                        # u_s_time = CM.force_decode(row[4])
+                        # u_e_time = CM.force_decode(row[6])
 
                         for info in json.loads(jsonresponse)['data']['elements']:
                             data = info['content']
@@ -103,19 +104,24 @@ def check_appointment():
                             e_date,e_time=end_time.split(' ')#splits end date and time from server data
 
                             if ( s_date==p_start_date) and (doc == json.loads(data)['tags']):# if date and doc sould be same
-                                print("Here date and doc is same !!")
-                                if((p_start_time< s_time and p_end_time <= s_time )or(p_start_time >= e_time and p_end_time >e_time)):
-                                                print ('Here date and doc is same but time slot is available !!')
-                               #  if (p_end_time < s_time) or (p_start_time > e_time):
-                                                Flag=True
-                                                return Flag
+                                print(start_time)
+                                print(end_time)
+                                list_start.append(s_time)
+                                list_end.append(e_time)
 
-                                else:
-                                    Flag=False
                             else:
-                                Flag=True
+                                flag= False
 
-                        return Flag
+                        for i, j in zip(list_start, list_end):
+                            if u_e_time <= i:
+                                flag = True
+                            elif j <= u_s_time:
+                                flag = True
+                            else:
+                                flag = False
+
+
+                        return flag
 
                         # for info in json.loads(jsonresponse)['data']['elements']:
                         #     data=info['content']
