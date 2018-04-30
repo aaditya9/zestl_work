@@ -118,10 +118,10 @@ def check_appointment():
                             elif j <= u_s_time:
                                 flag = True
                             else:
-                                flag = False
+                                return False
 
 
-                        return flag
+    return flag
 
                         # for info in json.loads(jsonresponse)['data']['elements']:
                         #     data=info['content']
