@@ -1,0 +1,70 @@
+6FRATDMSS9JMR  ::  BHAVANA :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"BHAVANA","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+6FRATDMSS9JMR  ::  BHAVANA :: {"error":false,"message":"Note Inserted"}
+6FRATDMSS9JMR  ::  BHAVANA :: {"error":false,"message":"Note Inserted"}
+6FRATDMSS9JMR  ::  BHAVANA :: {"error":false,"message":"Note Inserted"}
+6FRATDMSS9JMR  ::  BHAVANA :: {"error":false,"message":"Note Inserted"}
+6QVK2WJM3U43Y  ::  Gadam :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Gadam","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+6QVK2WJM3U43Y  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+6QVK2WJM3U43Y  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+6QVK2WJM3U43Y  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+6QVK2WJM3U43Y  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+4S9ZLE5JMFR6S  ::  Gadam :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Gadam","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+4S9ZLE5JMFR6S  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+4S9ZLE5JMFR6S  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+4S9ZLE5JMFR6S  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+4S9ZLE5JMFR6S  ::  Gadam :: {"error":false,"message":"Note Inserted"}
+8DVAX23Q5BM2M  ::  Jadhav :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Jadhav","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+8DVAX23Q5BM2M  ::  Jadhav :: {"error":false,"message":"Note Inserted"}
+8DVAX23Q5BM2M  ::  Jadhav :: {"error":false,"message":"Note Inserted"}
+8DVAX23Q5BM2M  ::  Jadhav :: {"error":false,"message":"Note Inserted"}
+8DVAX23Q5BM2M  ::  Jadhav :: {"error":false,"message":"Note Inserted"}
+DYN3VD35BQWWD  ::  Patil 1998/04/01 :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Patil 1998\/04\/01","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+DYN3VD35BQWWD  ::  Patil 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+DYN3VD35BQWWD  ::  Patil 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+DYN3VD35BQWWD  ::  Patil 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+DYN3VD35BQWWD  ::  Patil 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+BS6V2F6WN9NF2  ::  PATIL 1998/04/01 :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"PATIL 1998\/04\/01","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+BS6V2F6WN9NF2  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+BS6V2F6WN9NF2  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+BS6V2F6WN9NF2  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+BS6V2F6WN9NF2  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+A9UR6L533SSSR  ::  PATIL 1998/04/01 :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"PATIL 1998\/04\/01","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+A9UR6L533SSSR  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+A9UR6L533SSSR  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+A9UR6L533SSSR  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+A9UR6L533SSSR  ::  PATIL 1998/04/01 :: {"error":false,"message":"Note Inserted"}
+64GXCPMS22HX7  ::  hardik PATIL :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"hardik PATIL","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+64GXCPMS22HX7  ::  hardik PATIL :: {"error":false,"message":"Note Inserted"}
+64GXCPMS22HX7  ::  hardik PATIL :: {"error":false,"message":"Note Inserted"}
+64GXCPMS22HX7  ::  hardik PATIL :: {"error":false,"message":"Note Inserted"}
+64GXCPMS22HX7  ::  hardik PATIL :: {"error":false,"message":"Note Inserted"}
+4CYNTTJ4KMLWZ  ::   Jadhav :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":" Jadhav","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+4CYNTTJ4KMLWZ  ::   Jadhav :: {"error":false,"message":"Note Inserted"}
+4CYNTTJ4KMLWZ  ::   Jadhav :: {"error":false,"message":"Note Inserted"}
+4CYNTTJ4KMLWZ  ::   Jadhav :: {"error":false,"message":"Note Inserted"}
+4CYNTTJ4KMLWZ  ::   Jadhav :: {"error":false,"message":"Note Inserted"}
+689CG5VNA9QES  ::  Akshay  :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Akshay ","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+689CG5VNA9QES  ::  Akshay  :: {"error":false,"message":"Note Inserted"}
+689CG5VNA9QES  ::  Akshay  :: {"error":false,"message":"Note Inserted"}
+689CG5VNA9QES  ::  Akshay  :: {"error":false,"message":"Note Inserted"}
+689CG5VNA9QES  ::  Akshay  :: {"error":false,"message":"Note Inserted"}
+WU9BGQP34YUD5  ::  SHAHID PATIL :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"SHAHID PATIL","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+WU9BGQP34YUD5  ::  SHAHID PATIL :: {"error":false,"message":"Note Inserted"}
+WU9BGQP34YUD5  ::  SHAHID PATIL :: {"error":false,"message":"Note Inserted"}
+WU9BGQP34YUD5  ::  SHAHID PATIL :: {"error":false,"message":"Note Inserted"}
+WU9BGQP34YUD5  ::  SHAHID PATIL :: {"error":false,"message":"Note Inserted"}
+867VNWGQNZPFG  ::  MAURTAZA KHAN :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"MAURTAZA KHAN","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+867VNWGQNZPFG  ::  MAURTAZA KHAN :: {"error":false,"message":"Note Inserted"}
+867VNWGQNZPFG  ::  MAURTAZA KHAN :: {"error":false,"message":"Note Inserted"}
+867VNWGQNZPFG  ::  MAURTAZA KHAN :: {"error":false,"message":"Note Inserted"}
+867VNWGQNZPFG  ::  MAURTAZA KHAN :: {"error":false,"message":"Note Inserted"}
+2T44MCKM6P7V4  ::  Akshay Jadhav :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"Akshay Jadhav","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+2T44MCKM6P7V4  ::  Akshay Jadhav :: {"error":false,"message":"Note Inserted"}
+2T44MCKM6P7V4  ::  Akshay Jadhav :: {"error":false,"message":"Note Inserted"}
+2T44MCKM6P7V4  ::  Akshay Jadhav :: {"error":false,"message":"Note Inserted"}
+2T44MCKM6P7V4  ::  Akshay Jadhav :: {"error":false,"message":"Note Inserted"}
+5RH3XXE9ZHW45  ::  MAGAR GAURI :: {"error":false,"message":"Operation successful!","error_code":-1,"data":{"elements":null},"title":"Kidz Care","bgimgurl":"https:\/\/test-zestl-4.s3.amazonaws.com\/1502445771_BusinessBgImg_Pallete_WH4ULS9BHSAKZ.png","subtitle":"MAGAR GAURI","homeurl":"http:\/\/35.154.64.119\/v13\/zvice\/detailscard\/WH4ULS9BHSAKZ","homemethod":"POST","homejsondata":null,"businesstagid":"WH4ULS9BHSAKZ","users":[{"usertagid":"FX5283PU679LC","usertagtitle":"Zestl Admin"},{"usertagid":"FJBSBPYQMRZZN","usertagtitle":"ALL","selected":true}],"bottom_bar":[{"title":"My events","icon":"ic_action_toys","url":"http:\/\/35.154.64.119\/v12\/WH4ULS9BHSAKZ\/myeventslist","method":"GET","jsonData":null}],"showmessage":true}
+5RH3XXE9ZHW45  ::  MAGAR GAURI :: {"error":false,"message":"Note Inserted"}
+5RH3XXE9ZHW45  ::  MAGAR GAURI :: {"error":false,"message":"Note Inserted"}
+5RH3XXE9ZHW45  ::  MAGAR GAURI :: {"error":false,"message":"Note Inserted"}
+5RH3XXE9ZHW45  ::  MAGAR GAURI :: {"error":false,"message":"Note Inserted"}

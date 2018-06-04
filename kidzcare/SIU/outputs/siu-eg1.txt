@@ -1,0 +1,244 @@
+{
+  "rgs": {
+    "set_id_rgs": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "sch": {
+    "filler_contact_person": {
+      "id_number": {
+        "st": "4030"
+      }, 
+      "family_name": {
+        "surname": "Pramod"
+      }, 
+      "given_name": {
+        "st": "Bhat"
+      }
+    }, 
+    "entered_by_person": {
+      "id_number": {
+        "st": "7845"
+      }, 
+      "family_name": {
+        "surname": "ARLENE"
+      }, 
+      "given_name": {
+        "st": "HAYES"
+      }
+    }, 
+    "appointment_timing_quantity": {
+      "start_date_time": {
+        "time": "20180611103000"
+      }, 
+      "end_date_time": {
+        "time": "20180611104500"
+      }
+    }, 
+    "appointment_duration_units": {
+      "identifier": {
+        "st": "M"
+      }
+    }, 
+    "filler_status_code": {
+      "identifier": {
+        "st": "Booked"
+      }
+    }, 
+    "appointment_type": {
+      "text": {
+        "st": "EST SICK CHILD CARE"
+      }
+    }, 
+    "appointment_reason": {
+      "identifier": {
+        "st": "f/u asthma*-COPY"
+      }
+    }, 
+    "placer_appointment_id": {
+      "entity_identifier": {
+        "st": "1669404"
+      }
+    }, 
+    "filler_appointment_id": {
+      "entity_identifier": {
+        "st": "1669404"
+      }
+    }, 
+    "appointment_duration": {
+      "nm": {
+        "nm": "15"
+      }
+    }, 
+    "event_reason": {
+      "identifier": {
+        "st": "f/u asthma*-COPY"
+      }
+    }
+  }, 
+  "pid": {
+    "ethnic_group": {
+      "text": {
+        "st": "NOT_HISPANIC_LATINO"
+      }, 
+      "identifier": {
+        "st": "2186-5"
+      }, 
+      "name_of_coding_system": {
+        "id": "HL70189"
+      }
+    }, 
+    "marital_status": {
+      "identifier": {
+        "st": "other"
+      }
+    }, 
+    "set_id_pid": {
+      "si": {
+        "si": "1"
+      }
+    }, 
+    "patient_name": {
+      "family_name": {
+        "surname": "ALI"
+      }, 
+      "given_name": {
+        "st": "MUSTAFA"
+      }
+    }, 
+    "patient_address": {
+      "city": {
+        "st": "CAMERON"
+      }, 
+      "zip_or_postal_code": {
+        "st": "28326"
+      }, 
+      "state_or_province": {
+        "st": "NC"
+      }, 
+      "street_address": {
+        "street_or_mailing_address": "26 BIRD LANE"
+      }
+    }, 
+    "race": {
+      "identifier": {
+        "st": "2056-0"
+      }
+    }, 
+    "patient_identifier_list": {
+      "id_number": {
+        "st": "04243"
+      }
+    }, 
+    "primary_language": {
+      "identifier": {
+        "st": "eng"
+      }
+    }, 
+    "date_time_of_birth": {
+      "time": {
+        "dtm": "20051228"
+      }
+    }, 
+    "administrative_sex": {
+      "is": {
+        "is": "M"
+      }
+    }
+  }, 
+  "aip": {
+    "personnel_resource_id": {
+      "id_number": {
+        "st": "4030"
+      }, 
+      "family_name": {
+        "surname": "Pramod"
+      }, 
+      "given_name": {
+        "st": "Bhat"
+      }
+    }, 
+    "set_id_aip": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "ail": {
+    "location_resource_id": {
+      "point_of_care": {
+        "is": "6"
+      }, 
+      "room": {
+        "is": "Hope Mills"
+      }
+    }, 
+    "set_id_ail": {
+      "si": {
+        "si": "1"
+      }
+    }
+  }, 
+  "msh": {
+    "receiving_application": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "sending_facility": {
+      "namespace_id": {
+        "is": "KidzCare"
+      }
+    }, 
+    "receiving_facility": {
+      "namespace_id": {
+        "is": "TwigMe"
+      }
+    }, 
+    "encoding_characters": {
+      "st": {
+        "st": "\\S\\\\R\\\\E\\\\T\\"
+      }
+    }, 
+    "version_id": {
+      "version_id": {
+        "id": "2.5.1"
+      }
+    }, 
+    "sending_application": {
+      "namespace_id": {
+        "is": "Office Practicum"
+      }
+    }, 
+    "date_time_of_message": {
+      "time": {
+        "dtm": "20180327151311"
+      }
+    }, 
+    "message_control_id": {
+      "st": {
+        "st": "20180327151311"
+      }
+    }, 
+    "message_type": {
+      "message_code": {
+        "id": "SIU"
+      }, 
+      "trigger_event": {
+        "id": "S14"
+      }
+    }, 
+    "processing_id": {
+      "processing_id": {
+        "id": "P"
+      }
+    }, 
+    "field_separator": {
+      "st": {
+        "st": "\\F\\"
+      }
+    }
+  }
+}
