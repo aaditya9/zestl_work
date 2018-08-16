@@ -8,18 +8,21 @@ import sys
 import csv
 import requests
 import urllib2
+import urllib
 
 import hashlib
-import lib.login1 as LL
-import common as CM
+import login1 as LL
+import common_aditya as CM
 import copy_getbasejson as CG
-
-nameCol = 14
+nameCol1=13
+nameCol2 = 14
 mobColumn = 15
-
+businessID = LL.zbotID
 notename = [None] * 20
 noteCol = [None] * 20
 noOfNotes = 4
+
+form_ID=7082
 
 notename[0] = "pid"
 noteCol[0] = 0
@@ -32,16 +35,17 @@ noteCol[3] = 16
 
 headers, headers1 = LL.req_headers()
 
-inputfile = "/home/adi/Downloads/TwigMeScripts-master/hlt7-json/siu/output/userinfo1.csv"
+#inputfile = "/home/adi/Downloads/TwigMeScripts-master/hlt7-json/siu/output/userinfo1.csv"
 
 hasHeader = 'Y'
 # read from a file
 # ZbotID = "WH4ULS9BHSAKZ"
-businessID = "WH4ULS9BHSAKZ"
+#businessID = "WH4ULS9BHSAKZ"
+businessID = LL.zbotID
 
 # zviceID = 'WH4ULS9BHSAKZ'
 # EYP / EYP\:\ Academic\ and \ Activity\ Calendar /
-cardname = "Calendar new"
+cardname = "Text card 5"
 # calendar = "Grade 10: Academic and Activity Calendar"
 # calendar = "Calendar Grade 10: Academics and Activities"
 decurl = "http://twig.me/v1/push/dectest/" + businessID
@@ -56,81 +60,88 @@ def create_events(body, headers, businessID, calendarID):
     return LL.invoke_rest('POST', LL.BASE_URL + businessID + '/calendars/' + calendarID + '/events', json.dumps(body),
                           headers)
 
+def hit_url_method(body, headers, method, BASE_URL):
+    jsondata = LL.invoke_rest(method, BASE_URL, json.dumps(body), headers)
+    return jsondata['reply']
 
-# inputfile = "/home/adi/Downloads/TwigMeScripts-master/hlt7-json/siu/output/userinfo1.csv"
-#
-#
-# URL: [http://www.twig-me.com/v1/zvice/interaction/596MAZH8ZKUGM]
-#
-# Payload: [{"interactionID":"CommonInteraction_INTERACTION_TYPE_LINK_USERPROFILE","linkemail":"sachin@zestl.com"}]
-#
-# Response:{"error":false,"message":"User Linked Successfully","error_code":-1,"data":{"elements":null},"title":"Pagdandi - Reading Cafe","homeurl":"http:\/\/www.twig-me.com\/v1\/zvice\/detailscard\/3KMGPB7EPJBWP","homemethod":"POST","homejsondata":null,"showmessage":true}
-# "{"interactionID":"CommonInteraction_INTERACTION_TYPE_SHOW_CALENDAR_EVENTS","CalendarID":107,"ZviceID":3000004598,"DefaultView":"Month","categoryType":"CalendarCard"}"
-#
-# def create_user(p_id,title,mobile,tagNote):
-#
-#          with open(errorFile, "a") as ef:
-#                         print('Working on ',p_id)
-#                         body = {'zvicetype': 'ITAG', 'zviceloc': 'Pune', 'zvicelink': 'NEW', 'lat': 'lat', 'long': 'long',
-#                                 'tagprofile': 0,
-#                                 'media_type': 'image/jpg',
-#                                 'media_ext': 'jpg', 'media': "", 'media_size': 0, 'zbotid':ZbotID}
-#                         body['title'] =title
-#                         body['linkemail'] = ''
-#                         body['autogentag'] = "true"
-#                         body['interactionID'] = "CommonInteraction_INTERACTION_TYPE_CREATE_LIB_USER_PROFILE"
-#
-#                         method = "POST"
-#                         url =LL.BASE_URL + 'zvice/interaction/' + ZbotID
-#                         jsonreply = CM.hit_url_method(body, headers1, method, url)
-#                         jsonreply = json.loads(jsonreply)
-#                         zviceID=jsonreply['data']['usertagid']
-#                         print 'USERTAG ID:',zviceID
-#
-#                         # print(jsonreply)
-#
-#                         if jsonreply['error'] == True:
-#                             print "Error creating " + title
-#                             print jsonreply['message']
-#                             ef.write(p_id + "  ::  " + title+ " :: " + jsonreply['message'] + "\n")
-#                         else:
-#                             print "==========User " + title + " " +  " created ==========="
-#                             print jsonreply['data']
-#
-#                      #   post contact details
-#                         method = "POST"
-#                         body={}
-#                         body['Contact'] = mobile
-#                         body["interactionID"]="CommonInteraction_INTERACTION_TYPE_MODIFY_CONTACT_INFO"
-#                         url = LL.BASE_URL + 'zvice/interaction/' + zviceID
-#                         jsonreply = CM.hit_url_method(body, headers1, method, url)
-#                         ef.write(zviceID + "  ::  " + title + " :: " + jsonreply + "\n")
-#                         print jsonreply
-#
-#                         # #post notes
-#                         method = "PUT"
-#                         url = LL.BASE_URL + 'ztag/notes_PP/' + zviceID
-#                         body = {'notetype': 'P', 'lat': 'l', 'long': 'long', 'generic': 'Notes',
-#                                     'tagnotes': json.dumps(tagNote)}
-#
-#                         jsonreply = CM.hit_url_method(body, headers1, method, url)
-#                         print jsonreply
-#                         ef.write(zviceID + "  ::  " + title + " :: " + jsonreply + "\n")
-#
-#          return zviceID
-#          print('User get Created \n')
 
-# if __name__ == '__main__':
-def generate_events(inputfile):
-    print('Control in Event function now')
-    jsondata = CM.getBaseStructure(businessID, headers1, LL.BASE_URL)
-    print  jsondata
-
-    for card in jsondata['data']['elements']:
-        if cardname == card['title']:
+def delete_events(BASE_URL,dept_tagid,jsonresponse1,start,end,doc):
+    for card in json.loads(jsonresponse1)['data']['elements']:
+        if 'Calendar' == card['title']:
             calendarID = card['cardID']
-            print calendarID
-            calendarID = str(calendarID)
+
+            for a in card['actions']:
+                if "Explore" == a['title']:
+                    print("inside")
+                    year, month, day = start.split('-')
+                    actionurl = []
+                    actionurl = a['actionUrl']
+                    result = actionurl.replace('first_click=1', '')
+                    f = {"year": year, "month": month, 'interval': 30}
+                    grp = urllib.quote(json.dumps(f))  # we use this quote function for encoding send to filter
+                    actionurl = result + 'filter=' + grp
+                    method = a['method']
+                    body = {}
+                    jsonresponse = hit_url_method(body, headers1, method, actionurl)
+
+                    if json.loads(jsonresponse)['data']['elements']:
+                        for info in json.loads(jsonresponse)['data']['elements']:
+                            data = info['content']
+                            title = info['title']
+                            start_time = json.loads(data)['StartDateTime']
+                            end_time = json.loads(data)['EndDateTime']
+                            s_date, s_time = start_time.split(' ')  # splits start date and time from server data
+                            e_date, e_time = end_time.split(' ')  # splits end date and time from server data
+                            dd = json.loads(data)['tags']
+                            eventID = json.loads(data)['EventID']
+                            start1,time1=start.split(' ')
+                            end1,time2=end.split(' ')
+
+                            if (start1 == s_date) and (doc == json.loads(data)['tags']) and(end1 == e_date) :  # and ((doc_s_time == s_time)or (doc_e_time == e_time)):
+                                    result = CM.delete_event(BASE_URL, dept_tagid, calendarID, eventID, headers1)
+
+                            else:
+                                print('No event')
+    return result
+
+
+def generate_events(inputfile,centre_list):
+    print('Control in Event function now')
+
+    with open(inputfile, 'r') as rf:
+        data = csv.reader(rf, delimiter=',')
+        #if hasHeader == "Y":
+            #row1 = data.next()
+        for row in data:
+                loc = CM.force_decode(row[8])
+
+    for k, v in centre_list.items():
+        if loc in k:
+            dept_tagid = v
+    print dept_tagid
+
+
+    url = LL.BASE_URL + 'genericcards/' + dept_tagid
+    body = {}
+    method = "POST"
+    # flag=True
+
+    jsonresponse = hit_url_method(body, headers1, method, url)
+
+    for card in json.loads(jsonresponse)['data']['elements']:
+        if "Admin Appointment" == card['title']:
+           url1=card['cturl']
+           method1=card['ctmethod']
+           body1=json.loads(card['ctjsondata'])#{"parentCardID":16410}
+
+           jsonresponse1 = hit_url_method(body1, headers1, method1, url1)
+           print jsonresponse1
+
+           for card in json.loads(jsonresponse1)['data']['elements']:
+                if 'Calendar' == card['title']:
+                    calendarID = card['cardID']
+                    print calendarID
+                    calendarID = str(calendarID)
 
     parseResults = CM.parse_files(inputfile)
     counter = 0
@@ -140,8 +151,8 @@ def generate_events(inputfile):
 
         with open(inputfile, 'r') as rf:
             data = csv.reader(rf, delimiter=',')
-            if hasHeader == "Y":
-                row1 = data.next()
+        #    if hasHeader == "Y":
+                # row1 = data.next()
             method = "POST"
             for row in data:
                 pid = CM.force_decode(row[0])
@@ -161,6 +172,7 @@ def generate_events(inputfile):
                 publish_draft = 'Save & Publish'
                 occur = ''
                 tag = CM.force_decode(row[10]) + " " + CM.force_decode(row[11])
+                status=CM.force_decode(row[18])
                 RequestBody = {"Title": eventTitle,
                                "StartDateTime": start,
                                "EndDateTime": end,
@@ -195,71 +207,163 @@ def generate_events(inputfile):
                                "CalendarID": calendarID,
                                }
 
-                print RequestBody
+             #  is status is cancel then delete event
+                #list_status=['Cancelled']
+                booked_list=['BOOKED','booked','Booked']
+                CANCEL_status = ['Cancelled', 'CANCELLED', 'cancelled']
+                noshow_list=['NO_SHOW','no_show','No_show','No_Show','COMPLETED','Completed','completed']
+                if status in CANCEL_status:
 
-                # checking if apoointment slot is busy or not
-                flag = CG.check_appointment()
+                    result = delete_events(LL.BASE_URL, dept_tagid, jsonresponse1, start, end, tag)
 
-                if flag == False:
-                    print('Time slot is not availabe for this doctor !!')
-                else:
-                    response = create_events(RequestBody, headers1, businessID, calendarID)
+                if status in noshow_list:
+                    print('Status is Noshow, so delting prev and create new !!!')
+                    result = delete_events(LL.BASE_URL, dept_tagid, jsonresponse1, start, end, tag)
+                    flag = CG.check_appointment(inputfile, centre_list, loc)
 
-                    print response
-                    result = json.loads(response['reply'])
-                    EventID = result['cardid']
-                    u_name = row[nameCol].strip()
-                    u_email = ''
-                    mobile = row[mobColumn].strip()
-                    print('Now finding user ids of patient\n')
-                    user_id = CM.findtagid(pid, businessID, LL.BASE_URL, headers1)  # finding userid using pid
-                    print(user_id)
+                    if flag == False:
+                        print('Time slot is not availabe for this doctor !!')
+                    else:
+                        print('Creating new events !!')
+                        response = create_events(RequestBody, headers1, dept_tagid, calendarID)
+                        result = json.loads(response['reply'])
+                        EventID = result['cardid']
+                        u_name = row[nameCol1].strip() + ' ' + row[nameCol2].strip()
+                        u_name = u_name + " " + '(' + pid + ')'
+                        u_email = ''
+                        mobile = row[mobColumn].strip()
+                        user_id = CM.findtagid(pid, businessID, LL.BASE_URL, headers1)  # finding userid using pid
+                        if len(user_id) != 0:  # already user is created
+                            zviceID = user_id[0]
+                            print('Got userid:', zviceID)
+                            CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
 
-                    if len(user_id) != 0:  # already user is created
-                        #         user_tagid= user_id[0]
-                        zviceID = user_id[0]
-                        print('Got userid:', zviceID)
-                        CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
+                            for i in range(0, noOfNotes):
+                                if noteCol[i] == -1:
+                                    note = ""
+                                else:
+                                    note = row[noteCol[i]].strip()
+                                CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
 
-                        print('Adding moredetails\n')
+                            u_name = row[nameCol1].strip() + ' ' + row[nameCol2].strip()
+                            aid = row[noteCol[1]].strip()
+                            address = row[noteCol[3]].strip()
 
-                        for i in range(0, noOfNotes):
-                            if noteCol[i] == -1:
-                                note = ""
-                            else:
-                                note = row[noteCol[i]].strip()
-                            CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
+                            inputdata = {"Patient Name": u_name,
+                                         "PID": pid,
+                                         "Contact No. ": mobile,
+                                         "Address": address,
+                                         "Alternate ID": aid,
+                                         "User ID": user_id[0]
+                                         }
+                            rr = CM.patientinfo(calendarID, dept_tagid, zviceID, headers1, EventID, LL.BASE_URL)
 
-                    else:  # user will create here now!
-                        print ('USERID are not present so Creating new user \n')
-                        json_user_tagid = CM.add_user_InBusiness(businessID, u_name, u_email, headers1, LL.BASE_URL)
+                            result = CM.form_submission_using_NEW_API(LL.BASE_URL, businessID, headers1, form_ID,
+                                                                      inputdata)
 
-                        json_user_tagid = json.loads(json_user_tagid)
-                        zviceID = json_user_tagid['data']['usertagid']  # usertagid
+                        else:  # user will create here now!
+                            print ('USERID are not present so Creating new user \n')
+                            json_user_tagid = CM.add_user_InBusiness(dept_tagid, u_name, u_email, headers1, LL.BASE_URL)
 
-                        CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
+                            json_user_tagid = json.loads(json_user_tagid)
+                            zviceID = json_user_tagid['data']['usertagid']  # usertagid
 
-                        print('Adding moredetails\n')
+                            CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
 
-                        for i in range(0, noOfNotes):
-                            if noteCol[i] == -1:
-                                note = ""
-                            else:
-                                note = row[noteCol[i]].strip()
-                            CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
+                            print('Adding moredetails\n')
 
-                        print('MoreDetails get added !\n')
+                            for i in range(0, noOfNotes):
+                                if noteCol[i] == -1:
+                                    note = ""
+                                else:
+                                    note = row[noteCol[i]].strip()
+                                CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
 
-                        print('\nReturn from add user bussiness', json_user_tagid)
+                            rr = CM.patientinfo(calendarID, dept_tagid, zviceID, headers1, EventID, LL.BASE_URL)
+                            aid = row[noteCol[1]].strip()
 
-                    print('USER ID:', zviceID)
-                    #                print 'We get user id :',user_id
+                            address = row[noteCol[3]].strip()
+                            inputdata = {"Patient name": u_name,
+                                         "PID": pid,
+                                         "Contact No. ": mobile,
+                                         "Address": address,
+                                         "Alternate ID": aid,
+                                         "User ID": zviceID
+                                         }
 
-                    rr = CM.patientinfo(calendarID, businessID, zviceID, headers1, EventID, LL.BASE_URL)
+                            result = CM.form_submission_using_NEW_API(LL.BASE_URL, businessID, headers1, form_ID,
+                                                                      inputdata)
+                if status in booked_list:
+                                                             # checking if apoointment slot is busy or not
+                        flag = CG.check_appointment(inputfile,centre_list,loc)
 
-                    print 'Event gets generated !!\n'
-                    print 'Event ID:', EventID
-                    print 'Counter', counter
-                    print "==========================="
-                    print rr
+                        if flag == False:
+                            print('Time slot is not availabe for this doctor !!')
+                        else:
+                            print('Creating new events !!')
+                            response = create_events(RequestBody, headers1, dept_tagid, calendarID)
+                            result = json.loads(response['reply'])
+                            EventID = result['cardid']
+                            u_name = row[nameCol1].strip()+' '+ row[nameCol2].strip()
+                            u_name=u_name + " " + '('+ pid+')'
+                            u_email = ''
+                            mobile = row[mobColumn].strip()
+                            user_id = CM.findtagid(pid, businessID, LL.BASE_URL, headers1)  # finding userid using pid
+                            if len(user_id) != 0:  # already user is created
+                                zviceID = user_id[0]
+                                print('Got userid:', zviceID)
+                                CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
 
+                                for i in range(0, noOfNotes):
+                                    if noteCol[i] == -1:
+                                        note = ""
+                                    else:
+                                        note = row[noteCol[i]].strip()
+                                    CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
+
+                                u_name = row[nameCol1].strip() + ' ' + row[nameCol2].strip()
+                                aid = row[noteCol[1]].strip()
+                                address = row[noteCol[3]].strip()
+
+                                inputdata = {"Patient Name": u_name,
+                                             "PID": pid,
+                                             "Contact No. ": mobile,
+                                             "Address": address,
+                                             "Alternate ID": aid,
+                                             "User ID": user_id[0]
+                                             }
+                                rr = CM.patientinfo(calendarID, dept_tagid, zviceID, headers1, EventID, LL.BASE_URL)
+
+                                result = CM.form_submission_using_NEW_API(LL.BASE_URL, businessID, headers1, form_ID, inputdata)
+
+                            else:  # user will create here now!
+                                print ('USERID are not present so Creating new user \n')
+                                json_user_tagid = CM.add_user_InBusiness(dept_tagid, u_name, u_email, headers1, LL.BASE_URL)
+
+                                json_user_tagid = json.loads(json_user_tagid)
+                                zviceID = json_user_tagid['data']['usertagid']  # usertagid
+
+                                CM.add_contactdetails(zviceID, LL.BASE_URL, headers1, mobile)
+
+                                print('Adding moredetails\n')
+
+                                for i in range(0, noOfNotes):
+                                    if noteCol[i] == -1:
+                                        note = ""
+                                    else:
+                                        note = row[noteCol[i]].strip()
+                                    CM.add_moredetails(zviceID, LL.BASE_URL, notename[i], note, headers1)
+
+                                rr = CM.patientinfo(calendarID, dept_tagid, zviceID, headers1, EventID, LL.BASE_URL)
+                                aid = row[noteCol[1]].strip()
+
+                                address=row[noteCol[3]].strip()
+                                inputdata={"Patient name":u_name,
+                                      "PID":pid,
+                                      "Contact No. ":mobile,
+                                        "Address":address,
+                                        "Alternate ID":aid,
+                                           "User ID":zviceID
+                                      }
+
+                                result=CM.form_submission_using_NEW_API(LL.BASE_URL,businessID,headers1,form_ID,inputdata)
